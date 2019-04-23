@@ -1,12 +1,19 @@
 package biggest_fish;
 
 public class FishHunter extends Fish{
+  private int victims;
+  
+  public FishHunter(int weith) {
+    super(weith);
+    victims=0;
+  }
 
-	public FishHunter(int weith) {
-		super(weith);
-	}
-	
-	public void eat(FishVictim fish){
-		setWeith(weith+fish.getWeith());
-	}
+  public void eat(FishVictim fish){
+    this.weith+=fish.getWeith();
+    victims++;
+  }
+
+  public int getVictims() {
+    return victims;
+  }
 }
