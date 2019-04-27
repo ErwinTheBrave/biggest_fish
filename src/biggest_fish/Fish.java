@@ -1,17 +1,17 @@
 package biggest_fish;
 
 public class Fish {
-  protected int weith;
+  protected int weight;
 
-  public Fish(int weith) {
-    this.weith = weith;
+  public Fish(int weight) {
+    this.weight = weight;
   }
 
-  public int getWeith() {
-    return weith;
+  public int getWeight() {
+    return weight;
   }
 
-  public void setWeith(int weith) {
-    this.weith = weith;
+  public void setWeight(int weight) {
+    this.weight = weight;
   }
 }

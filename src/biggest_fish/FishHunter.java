@@ -3,13 +3,13 @@ package biggest_fish;
 public class FishHunter extends Fish{
   private int victims;
   
-  public FishHunter(int weith) {
-    super(weith);
+  public FishHunter(int weight) {
+    super(weight);
     victims=0;
   }
 
   public void eat(FishVictim fish){
-    this.weith+=fish.getWeith();
+    this.weight+=fish.getWeight();
     victims++;
   }
 

@@ -28,9 +28,9 @@ public class Aquarium {
     while ((hunters.size()>0)&(victims.size()>0)){
       hunterNum = new Random().nextInt(hunters.size());
       victimNum = new Random().nextInt(victims.size());
-      System.out.println("Hunter number "+hunterNum+" with weith "+
-          hunters.get(hunterNum).getWeith()+" eats his victim with weith "+
-          victims.get(victimNum).getWeith());
+      System.out.println("Hunter number "+hunterNum+" wight weight "+
+          hunters.get(hunterNum).getWeight()+" eats his victim wight weight "+
+          victims.get(victimNum).getWeight());
       hunters.get(hunterNum).eat(victims.get(victimNum));	
       victims.remove(victimNum);
     }
@@ -39,12 +39,12 @@ public class Aquarium {
   public void getHunters() {
     int biggest=0;
     for (int i=0; i<hunters.size(); i++) {
-      System.out.println("Weith of hunter ¹"+i+" is "+hunters.get(i).getWeith());
-      if (hunters.get(i).getWeith()>hunters.get(biggest).getWeith()) {
+      System.out.println("Weight of hunter ¹"+i+" is "+hunters.get(i).getWeight());
+      if (hunters.get(i).getWeight()>hunters.get(biggest).getWeight()) {
         biggest=i;
       }
     }
-    System.out.println("The biggest hunter is ¹"+biggest+" with weith "+
-        hunters.get(biggest).getWeith()+" and "+hunters.get(biggest).getVictims()+" fishes eaten");
+    System.out.println("The biggest hunter is ¹"+biggest+" wight weight "+
+        hunters.get(biggest).getWeight()+" and "+hunters.get(biggest).getVictims()+" fishes eaten");
   }
 }
